@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:scrollbars="none"
+    tools:context="com.example.wassa_000.technician.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo2" />
+
+            <!--<TextView-->
+                <!--style="@style/et_style"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/quote" />-->
+        </LinearLayout>
+
+
+        <!--name-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/name"-->
+        <!--style="@style/sign_up_tv"-->
+        <!--android:id="@+id/tv_name_sign_up"-->
+        <!--/>-->
+        <AutoCompleteTextView
+            android:id="@+id/et_name_sign_up"
+            style="@style/et_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:hint="@string/full_name" />
+        <!--&lt;!&ndash; Password&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/password"-->
+        <!--style="@style/sign_up_tv"-->
+        <!--android:id="@+id/tv_password"-->
+        <!--/>-->
+        <AutoCompleteTextView
+            android:id="@+id/et_password"
+            style="@style/et_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+
+            />
+
+        <!--&lt;!&ndash; Confirm Password&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/confirm_password"-->
+        <!--style="@style/sign_up_tv"-->
+        <!--android:id="@+id/tv_confirm_password"-->
+        <!--/>-->
+        <AutoCompleteTextView
+            android:id="@+id/et_confirm_password"
+            style="@style/et_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password_hint"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword" />
+        <!--&lt;!&ndash; Contact Number&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/email_hint"-->
+        <!--style="@style/sign_up_tv"-->
+        <!--android:id="@+id/tv_email"-->
+        <!--/>-->
+        <AutoCompleteTextView
+            android:id="@+id/et_email"
+            style="@style/et_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"
+            android:imeOptions="actionNext"
+            android:inputType="textWebEmailAddress"
+            android:maxLines="1" />
+        <!--&lt;!&ndash; Contact Number&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/contact_number"-->
+        <!--style="@style/sign_up_tv"-->
+        <!--android:id="@+id/tv_contact_number"-->
+        <!--/>-->
+        <AutoCompleteTextView
+            android:id="@+id/et_contact_number"
+            style="@style/et_sign_up"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:hint="@string/contact_number_hint" />
+
+        <!--&lt;!&ndash;Gender&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/gender"-->
+        <!--style="@style/sign_up_tv"-->
+        <!--android:id="@+id/tv_gender"-->
+
+        <!--/>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/gender"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select_gender"
+            android:paddingLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.4"
+            android:textColor="#000"
+            />
+        <Spinner
+            android:id="@+id/sp_gender"
+            style="@style/sp_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10sp"
+            android:layout_weight="0.6"
+            android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/select_city"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_weight="0.4"
+                android:textColor="#000"
+                />
+            <Spinner
+                android:id="@+id/sp_cities"
+                style="@style/sp_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="0.6"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="10sp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash;Address&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/address"-->
+        <!--style="@style/sign_up_tv"-->
+        <!--android:id="@+id/tv_address"-->
+        <!--/>-->
+        <!--<AutoCompleteTextView-->
+            <!--android:id="@+id/et_address"-->
+            <!--style="@style/et_sign_up"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/address_hint" />-->
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tvLoginStatus"
+            />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/btn_submit"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</ScrollView>

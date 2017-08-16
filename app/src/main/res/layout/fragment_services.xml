@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wassa_000.technician.ServiceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <!--<TextView-->
+                <!--style="@style/et_style"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10sp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/quote" />-->
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/et_style"
+                    android:imeOptions="actionNext"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:hint="@string/name_place_holder" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/et_style"
+                    android:imeOptions="actionNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:background="@drawable/et_search"
+                    android:hint="@string/address_place_holder" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/et_style"
+                    android:imeOptions="actionNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="11"
+
+                    android:background="@drawable/et_search"
+                    android:hint="@string/phone_place_holder"
+                    android:inputType="phone" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/et_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/select_city"
+                            android:textColor="#000" />
+
+                        <Spinner
+                            android:id="@+id/sp_cities"
+                            style="@style/sp_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_column="1"
+                            android:layout_marginBottom="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginTop="10sp"
+
+                            android:spinnerMode="dropdown" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/et_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/select_service"
+                            android:textColor="#000" />
+
+                        <Spinner
+                            android:id="@+id/sp_services"
+                            style="@style/sp_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_column="1"
+                            android:layout_margin="10sp"
+                            android:spinnerMode="dropdown" />
+                    </TableRow>
+                </TableLayout>
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/remarks"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/table"
+                    android:background="@drawable/et_search"
+                    android:gravity="top"
+                    android:hint="@string/type_message"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:imeOptions="actionDone"
+                    android:padding="5dp"
+                    android:scrollbars="vertical" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/btn_submit"
+                    android:textColor="@color/windowBackground" />
+            </LinearLayout>
+
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

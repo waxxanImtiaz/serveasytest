@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+
+
+
+    <color name="heading_color">#FF3232</color>
+    <color name="toggleButtonColor">#8bc34a</color>
+    <color name="tabs_back_color">#33691e</color>
+    <color name="white">#FFF</color>
+    <color name="product_categories">#FF3232</color>
+    <color name="transp">#80000000</color>
+    <color name="transp_hover">#FFEE58</color>
+    <color name="transp_yello">#9000F999</color>
+    <color name="white_overlay_8x">#000000</color>
+    <color name="product_title">#222222</color>
+    <color name="btn_atc_yellow">#C0CA33</color>
+    <color name="btn_atc_lime">#00897B</color>
+    <color name="teal">#B2DFDB</color>
+    <color name="green">#7dac20</color>
+
+    <color name="details_row_sep">#00A695</color>
+
+</resources>
